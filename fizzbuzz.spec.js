@@ -1,5 +1,5 @@
 describe("fizzbuzz", function() {
-    it("Given number 1 should return 1", function() {
+    it("Given number numbers not divisible by 3 and 5 should return number", function() {
         var numbersNotDivisibleByBothThreeAndFive = [1, 2, 4, 7];
         numbersNotDivisibleByBothThreeAndFive.forEach(function(numberNotDivisbleByBothThreeAndFive) {
             //---------------Set up test pack-------------------
@@ -9,14 +9,6 @@ describe("fizzbuzz", function() {
             //---------------Test Result -----------------------
             expect(result).toBe(numberNotDivisbleByBothThreeAndFive);
         });
-    });
-    it("Given number 2 should return 2", function() {
-        //---------------Set up test pack-------------------
-        var input = 2;
-        //---------------Execute Test ----------------------
-        var result = IsFizzBuzz(input);
-        //---------------Test Result -----------------------
-        expect(result).toBe(2);
     });
     it("Given number 3 should return fizz", function() {
         //---------------Set up test pack-------------------
